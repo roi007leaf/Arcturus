@@ -1,0 +1,75 @@
+#!/system/bin/sh
+#
+# ARISE Sound Systems™
+#
+# Deuteronomy™
+#
+# arisesound_setprop
+#
+# www.arisesound.com
+
+
+
+## Asus™ Zenfone 3 Ultra Audio ##
+
+#
+setprop qcom.hw.aac.encoder true
+setprop mm.enable.smoothstreaming true
+setprop av.debug.disable.pers.cache true
+setprop mmp.enable.3g2 true
+setprop media.aac_51_output_enabled true
+setprop audio.offload.track.enable false
+setprop audio.deep_buffer.media true
+setprop audio.offload.gapless.enabled true
+setprop audio.offload.multiple.enabled false
+setprop audio.safx.pbe.enabled true
+setprop audio.pp.asphere.enabled false
+#
+
+## Vivo™ V3 Max Audio ##
+
+#
+setprop ro.config.audio.speaker_boost yes
+setprop ro.mtk_audio_profiles 1
+setprop ro.mtk_audenh_support 1
+setprop ro.mtk_besloudness_support 1
+setprop ro.mtk_bessurround_support 1
+setprop ro.mtk_bt_support 1
+setprop ro.mtk_dolby_dap_support 1
+setprop ro.mtk_audio_tuning_tool_ver V1
+setprop ro.have_aacencode_feature 1
+setprop ro.mtk_audio_ape_support 1
+setprop ro.mtk_flv_playback_support 1
+setprop ro.mtk_wmv_playback_support 1
+#
+
+## Vivo™ X7 Plus Audio ##
+
+#
+setprop ro.config.hifi_config_state 2
+setprop persist.vivo.phone.hifi Have_hifi
+setprop ro.config.hifi_always_on yes
+
+## Miscellaneous Audio ##
+
+#
+#Hi-Res option for PowerAmp
+#setprop ro.lenovo.hifi_support true
+#
+
+#Disable property for Dolby ds2
+setprop audio.dolby.ds2.enabled true
+#
+
+#Disable property for hard bypass
+setprop audio.dolby.ds2.hardbypass true
+#
+
+setprop audio.offload.pcm.16bit.enable true
+setprop audio.offload.pcm.24bit.enable true
+setprop tunnel.audiovideo.decode false
+setprop tunnel.decode false
+setprop lpa.decode false
+setprop lpa.releaselock false
+setprop lpa.use-stagefright false
+#
